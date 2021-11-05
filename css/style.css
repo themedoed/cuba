@@ -1,0 +1,358 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #505050;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    padding: 0 10px;
+}
+
+/* Первый экран и шапка */
+.header__top{
+    background-image: url('../images/top-bg.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+}
+
+.header__top-inner{
+    font-family: Georgia;
+    border: 2px solid #ECB84C;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: #fff;
+}
+
+.header__title{
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 227px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin: auto;
+}
+
+.header__text{
+    font-size: 24px;
+    line-height: 27px;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    margin-bottom: -12px;
+}
+
+.header__text::after,
+.header__text::before{
+    content: "";
+    border-top: 2px solid #ECB84C;
+    width: 100%;
+}
+
+.header__text::after{
+    margin-left: 30px;
+}
+
+.header__text::before{
+    margin-right: 30px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    border-bottom: 1px solid #D0D4D8;
+}
+
+.menu__item{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #909090;
+    margin: 0 8px;
+    text-decoration: none;
+    padding: 24px 10px 20px;
+    border-bottom: 4px solid transparent;
+    transition: all .5s;
+}
+
+.menu__item:hover{
+    border-bottom: 4px solid #ECB84C;
+    color: #4E5665;
+}
+
+.title{
+    text-align: center;
+    color: #4E5665;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 25px;
+    font-family: Georgia;
+    font-weight: 400;
+}
+
+.benefits .container{
+    padding: 0 100px;
+    border-bottom: 1px solid #D0D4D8;
+}
+
+.benefits__info-link{
+    text-align: right;
+}
+
+.benefits__info-link a{
+    color: #ECB84C;
+}
+
+.benefits__icons{
+    padding-top: 64px;
+    padding-bottom: 81px;
+    display: flex;
+}
+
+.benefits__icons-item{
+    margin: auto;
+    text-align: center;
+}
+
+.benefits__icons-item-img{
+    height: 80px;
+    margin-bottom: 35px;
+}
+
+.benefits__icons-item-num{
+    color: #4E5665;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.benefits__icons-item-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #909090;
+}
+
+.def .container{
+    padding: 0 100px;
+}
+
+.about__item{
+    margin-top: 100px;
+    padding: 70px 0;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.about__box{
+    padding: 33px 40px 18px;
+    background-color: #fff;
+    max-width: 470px;
+    position: relative;
+}
+
+.about__box::after,
+.about__box::before{
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+}
+
+.about__box::after{
+    border-top: 2px solid #ECB84C;
+    border-left: 2px solid #ECB84C;
+    top: 19px;
+    left: 19px;
+}
+
+.about__box::before{
+    border-bottom: 2px solid #ECB84C;
+    border-right: 2px solid #ECB84C;
+    bottom: 19px;
+    right: 19px;
+}
+
+.about__box-title{
+    font-family: Georgia;
+    font-size: 24px;
+    line-height: 25px;
+    color: #4E5665;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about__item:nth-child(odd){
+    background-position: left;
+
+}
+
+.about__item:nth-child(odd) .about__box{
+    margin-left: auto;
+}
+
+.cadillac .container{
+    padding: 0 100px;
+    border-bottom: 1px solid #D0D4D8;
+    padding-bottom: 80px;
+}
+
+.container .cadillac-img{
+    margin-left: -100px;
+    margin-bottom: 53px;
+}
+
+.photo .container{
+    padding: 0 100px;
+}
+
+.photo__info .text{
+    position: relative;
+    padding-bottom: 48px;
+    margin-bottom: 56px;
+}
+
+.photo__info .text::after{
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 1px;
+    background-color:#D0D4D8;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.slider{
+    max-width: 640px;
+    margin: 0 auto;
+    filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
+}
+
+.slick-arrow{
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #ECB84C;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.slick-prev{
+    left: -20px;
+}
+
+.slick-next{
+    right: -20px;
+}
+
+.footer{
+    background-color: #F8F8F8;
+}
+
+.footer__inner{
+    padding-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    margin: 0 10px;
+}
+
+
+.footer-title{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #4E5665;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-link{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #505050;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.footer-link--social{
+    padding-left: 28px;
+    position: relative;
+}
+
+.footer-link--social::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+}
+
+.footer-link--contact::before{
+    background-image: url('../images/footer/contact.svg');
+    top: 2px;
+}
+
+.footer-link--facebook::before{
+    background-image: url('../images/footer/facebook.svg');
+    top: 2px;
+}
+
+.footer-link--instagram::before{
+    background-image: url('../images/footer/instagram.svg');
+    top: 2px;
+}
+
+.footer-link--youtube::before{
+    background-image: url('../images/footer/youtube.svg');
+    top: 2px;
+}
+
+.footer-link--email::before{
+    background-image: url('../images/footer/email.svg');
+    top: 2px;
+}
+
+.copy{
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+
